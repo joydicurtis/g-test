@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;  // for footer at bottom
 }
-.siteContent {
+.content {
     flex: 1 0 auto;
 }
 a {
@@ -41,8 +41,12 @@ p {
 }
 h1 {
     margin: 0 0 20px;
-    font-size: $fontSize-largest;
-    line-height: $lineHeight-stightest;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 8px;
+    @include breakpoint(large) {
+        font-size: 30px;
+    }
 }
 h2 {
     margin: 0 0 16px;

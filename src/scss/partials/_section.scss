@@ -1,0 +1,20 @@
+.section {
+    border-radius: 40px 40px 0 0;
+    color: $text-color;
+    margin-top: -40px;
+    padding: 28px;
+    &.section_light {
+        position: relative;
+        background: $bg-color;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: $fontWeight-semibold;
+        text-align: center;
+        @include breakpoint(medium) {
+            font-size: 20px;
+        }
+    }
+    &.section_wooden {
+        background: url(../images/wooden-bg.svg) $bg-color;
+    }
+}

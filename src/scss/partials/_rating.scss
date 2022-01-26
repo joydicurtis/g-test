@@ -1,0 +1,23 @@
+.rating {
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    @include breakpoint(large) {
+        margin: 0;
+    }
+    li {
+        position: relative;
+        display: inline;
+        line-height: normal;
+        transition: color .3s ease-in-out;
+        .img {
+            width: 35px;
+            height: 37px;
+            @include breakpoint(large) {
+                width: 37px;
+                height: 56px;
+            }
+        }
+    }
+}

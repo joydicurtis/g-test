@@ -1,0 +1,73 @@
+.section-feedback {
+    padding: 60px 0;
+    z-index: 5;
+    p {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+        @include breakpoint(medium) {
+            margin-bottom: 0;
+        }
+        @include breakpoint(medium) {
+            font-size: 22px;
+        }
+    }
+    .container {
+        @include breakpoint(medium) {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+        @include breakpoint(large) {
+            max-width: 920px;
+        }
+    }
+    .section-feedback__clock {
+        position: absolute;
+        top: -46px;
+        left: 16px;
+        width: 74px;
+        @include breakpoint(medium) {
+            width: 100px;
+            top: -55px;
+        }
+    }
+    .section-feedback__avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        @include breakpoint(medium) {
+            float: left;
+            margin-right: 18px;
+            margin-bottom: 18px;
+        }
+        @include breakpoint(large) {
+            width: 160px;
+            height: 160px;
+        }
+    }
+    .section-feedback-info {
+        overflow: hidden;
+    }
+    .section-feedback-info__inner {
+        @include breakpoint(medium) {
+            overflow: hidden;
+            text-align: left;
+            margin-bottom: 28px;
+        }
+        @include breakpoint(large) {
+            margin-bottom: 16px;
+        }
+    }
+    .section-feedback__item {
+        background: $white;
+        border-radius: 32px 32px 32px 0;
+        font-weight: $fontWeight-normal;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 16px;
+        text-align: left;
+    }
+}

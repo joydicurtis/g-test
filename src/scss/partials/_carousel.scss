@@ -1,0 +1,23 @@
+.carousel {
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 1;
+        bottom: auto;
+        top: 20px;
+        @include breakpoint(medium) {
+            bottom: 0;
+            top: 0;
+        }
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 27px;
+        height: 41px;
+    }
+    .carousel-control-prev-icon {
+        background-image: url('../images/arrow-prev.png');
+    }
+    .carousel-control-next-icon {
+        background-image: url('../images/arrow-next.png');
+    }
+}

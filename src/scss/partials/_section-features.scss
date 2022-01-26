@@ -1,0 +1,94 @@
+.section-features {
+    z-index: 6;
+    padding: 45px 0;
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @include breakpoint(large) {
+            margin-bottom: 35px;
+        }
+    }
+    .section-features-list {
+        text-align: left;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 12px;
+        @include breakpoint(medium) {
+            margin-bottom: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-left: 62px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 24px;
+            min-height: 50px;
+            @include breakpoint(medium) {
+                font-size: 18px;
+                line-height: 28px;
+                padding-left: 97px;
+                margin-bottom: 36px;
+                min-height: 60px;
+            }
+            &:before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                width: 50px;
+                height: 50px;
+                @include breakpoint(medium) {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+             &:nth-child(1) {
+                &:before {
+                    background: url('../images/heart.png') no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+            &:nth-child(2) {
+                &:before {
+                    background: url('../images/cards.png') no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+            &:nth-child(3) {
+                &:before {
+                    background: url('../images/eye.png') no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+            &:nth-child(4) {
+                &:before {
+                    background: url('../images/rocket.png') no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+            &:nth-child(5) {
+                &:before {
+                    background: url('../images/watch.png') no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+    .section-features__image {
+        width: 166px;
+        margin: 0 auto 40px;
+        @include breakpoint(medium) {
+            width: 245px;
+        }
+        @include breakpoint(large) {
+            width: 270px;
+        }
+    }
+}

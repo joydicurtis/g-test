@@ -1,0 +1,67 @@
+.section-gif {
+    position: relative;
+    background: url('../images/fuji-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 75px 0;
+    border-radius: 40px 40px 0 0;
+    z-index: 4;
+    text-align: center;
+    overflow-x: hidden;
+    .section-gif__cloud-left {
+        position: absolute;
+        top: 18px;
+        z-index: 5;
+        width: 122px;
+        @include breakpoint(medium) {
+            width: 200px;
+            left: -6px;
+            top: 35px;
+        }
+        @include breakpoint(medium) {
+            left: -80px;
+            top: 50px;
+        }
+    }
+    .section-gif__cloud-right {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        @include breakpoint(medium) {
+            top: 380px;
+            right: -115px;
+        }
+        @include breakpoint(large) {
+            top: 55px;
+            right: -90px;
+        }
+    }
+    .section-gif__image {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.639);
+        border-radius: 35px;
+        margin-bottom: 40px;
+    }
+    .section-gif__icon {
+        position: relative;
+        margin-bottom: 16px;
+        z-index: 1;
+        img {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.64);
+            border-radius: 12px;
+        }
+    }
+    p {
+        text-shadow: 0px 4px 20px #FFFFFF, 0px 0px 10px #FFFFFF;
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        font-weight: $fontWeight-semibold;
+        @include breakpoint(large) {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}

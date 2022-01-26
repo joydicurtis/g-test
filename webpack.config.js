@@ -3,6 +3,7 @@ const HTMLPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: './src/index.js',
@@ -28,8 +29,18 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'style.css'
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+              {from: "src/images", to: "images/"}
+            ],
+          }),
     ],
+    resolve: {
+        alias: {
+          images: path.resolve(__dirname, 'src/assets/img/'),
+        },
+    },
     module: {
         rules: [{
                 test: /\.css$/i,
@@ -47,6 +58,15 @@ module.exports = {
                   options: {
                     presets: ['@babel/preset-env']
                   }
+                }
+            },
+            {
+                test:/\.(jpg|png|svg)$/,
+                type: "asset",
+                parser: {
+                    dataUrlCondition: {
+                    maxSize: 8192
+                    }
                 }
             }
         ]

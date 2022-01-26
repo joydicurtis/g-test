@@ -1,2 +1,88 @@
-.siteFooter {
+.footer {
+    position: relative;
+    background: url('../images/footer-bg.png') no-repeat;
+    background-size: cover;
+    border-radius: 40px 40px 0 0;
+    margin-top: -40px;
+    z-index: 7;
+    padding: 42px 0;
+    color: $white;
+    text-align: center;
+    @include breakpoint(medium) {
+        text-align: left;
+    }
+    h1 {
+        font-weight: $fontWeight-bold;
+        font-size: 40px;
+        margin-bottom: 16px;
+        @include breakpoint(large) {
+            font-size: 55px;
+            margin-bottom: 24px;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: $fontWeight-semibold;
+        @include breakpoint(medium) {
+            margin-bottom: 20px;
+        }
+        @include breakpoint(large) {
+            margin-bottom: 24px;
+        }
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 140px;
+        li {
+            display: flex;
+            align-items: center;
+            width: 43px;
+            height: 43px;
+            line-height: 43px;
+        }
+    }
+    .footer-copyright {
+        text-align: center;
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: $fontWeight-normal;
+            margin-bottom: 16px;
+            span {
+                margin-right: 18px;
+            }
+        }
+        .footer-copyright-nav {
+            ul {
+                display: flex;
+                justify-content:  space-between;
+                flex-wrap: wrap;
+                list-style: none;
+                padding-left: 0;
+                @include breakpoint(medium) {
+                    justify-content: center;
+                }
+                li {
+                    margin-bottom: 4px;
+                    margin: 0 auto;
+                    @include breakpoint(medium) {
+                        margin: 0 25px 0 0;
+                    }
+                    a {
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: $fontWeight-normal;
+                        margin-bottom: 16px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }

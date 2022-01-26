@@ -1,9 +1,25 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/carousel";
 @import 'vendor/normalize';
 
 @import 'setup/setup';
 @import 'global';
 
+@import 'partials/animations';
+@import 'partials/board';
+@import 'partials/buttons';
+@import 'partials/carousel';
 @import 'partials/layout';
 @import 'partials/forms';
 @import 'partials/footer';
 @import 'partials/header';
+@import 'partials/section';
+@import 'partials/section-gif';
+@import 'partials/section-features';
+@import 'partials/section-feedback';
+@import 'partials/rating';
