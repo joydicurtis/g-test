@@ -9,20 +9,37 @@
     <body>
         <div class="сontent">
             <header class="header">
-                <div class="header_logo bounce-in-top">
-                    <a href="#">
-                        <img src="./images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="header-wrapper">
-                    <button type="button" class="cta-button">Play Now</button>
-                    <div class="header_text">Match Tiles & Relax</div>
-                </div>
-                <div class="header_hero">
-                    <img src="./images/teaser-hero.png" alt="Eva Hero">
-                </div>
-                <div class="header_chips">
-                    <img src="./images/teaser-chips.png" alt="Game Chips">
+                <div class="header-container">
+                    <div class="header_logo bounce-in-top">
+                        <a href="#">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="./images/logo.png">
+                                <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/logo-tab.png">
+                                <source media="(min-width: 1440px)" srcset="./images/logo-desktop.png">
+                                <img src="./images/logo.png" alt="logo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="header-wrapper">
+                        <button type="button" class="cta-button">Play Now</button>
+                        <div class="header_text">Match Tiles & Relax</div>
+                    </div>
+                    <div class="header_hero">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/teaser-hero.png">
+                            <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/teaser-hero-tab.png">
+                            <source media="(min-width: 1440px)" srcset="./images/teaser-hero-desktop.png">
+                            <img src="./images/teaser-hero.png" alt="Eva thinking">
+                        </picture>
+                    </div>
+                    <div class="header_chips">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/teaser-chips.png">
+                            <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/teaser-chips-tab.png">
+                            <source media="(min-width: 768px)" srcset="./images/teaser-chips-desktop.png">
+                            <img src="./images/teaser-chips.png" alt="Game Chips">
+                        </picture>
+                    </div>
                 </div>
             </header>
             <main>
@@ -32,30 +49,60 @@
                             Enjoy a new take on Mahjong Solitaire as you help a young girl and her cat traverse the globe in search of her lost parents.
                         </p>
                         <div class="section-board-wrapper">
-                            <div class="section-board-baloon u-hidden" id="js-board-balloon">
-                                <img src="./images/baloon.png" alt="baloon">
-                            </div>
-                            <div class="section-board-cats-baloon u-hidden" id="js-board-balloon-cats">
-                                <img src="./images/cats-balloon.png" alt="cat shaped baloons">
-                            </div>
                             <div class="section-board-video">
-                                <img src="../images/video.png" alt="video">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./images/video.png">
+                                    <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/video-tab.png">
+                                    <source media="(min-width: 768px)" srcset="./images/video-desktop.png">
+                                    <img src="../images/video.png" alt="video">
+                                </picture>
+                                <div class="section-board-baloon u-hidden" id="js-board-balloon">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="./images/baloon.png">
+                                        <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/baloon-tab.png">
+                                        <source media="(min-width: 768px)" srcset="./images/baloon-desktop.png">
+                                        <img src="./images/baloon.png" alt="baloon">
+                                    </picture>
+                                </div>
+                                <div class="section-board-cats-baloon u-hidden" id="js-board-balloon-cats">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="./images/cats-balloon.png">
+                                        <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/cats-balloon-tab.png">
+                                        <source media="(min-width: 768px)" srcset="./images/cats-balloon-desktop.png">
+                                        <img src="./images/cats-balloon.png" alt="cat shaped baloons">
+                                    </picture>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section class="section section-gif">
                     <div class="container">
-                        <div class="section-gif__cloud-left">
-                            <img src="./images/cloud.png" alt="cloud">
+                        <div class="section-gif__cloud-left u-hidden" id="js-cloud-left">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="./images/cloud.png">
+                                <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/cloud-tab.png">
+                                <source media="(min-width: 768px)" srcset="./images/cloud-desktop.png">
+                                <img src="./images/cloud.png" alt="cloud">
+                            </picture>
                         </div>
-                        <div class="section-gif__cloud-right">
-                            <img src="./images/cloud-right.png" alt="cloud">
+                        <div class="section-gif__cloud-right u-hidden" id="js-cloud-right">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="./images/cloud-right.png">
+                                <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/cloud-right-tab.png">
+                                <source media="(min-width: 768px)" srcset="./images/cloud-right-desktop.png">
+                                <img src="./images/cloud-right.png" alt="cloud">
+                            </picture>
                         </div>
                         <div class="row">
                             <div class="col-sm-12 col-lg-6">
                             <div class="section-gif__image">
-                                <img src="./images/pseudo-gif-image.png" alt="gif image">
+                                <picture>
+                                    <source media="(max-width: 767px)" srcset="./images/pseudo-gif-image.png">
+                                    <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/pseudo-gif-image-tab.png">
+                                    <source media="(min-width: 768px)" srcset="./images/pseudo-gif-image-desktop.png">
+                                    <img src="./images/pseudo-gif-image.png" alt="gif image">
+                                </picture>
                             </div>
                             </div>
                             <div class="col-sm-12 col-lg-6">
@@ -73,8 +120,13 @@
                     </div>
                 </section>
                 <section class="section section_light section-feedback">
-                    <div class="section-feedback__clock">
-                        <img src="../images/clock.png" alt="clock image">
+                    <div class="section-feedback__clock u-hidden" id="js-clock">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="./images/clock.png">
+                            <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/clock-tab.png">
+                            <source media="(min-width: 768px)" srcset="./images/clock-desktop.png">
+                            <img src="../images/clock.png" alt="clock image">
+                        </picture>
                     </div>
                     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -82,16 +134,16 @@
                             <div class="d-block w-100">
                                 <div class="container u-clearfix">
                                     <div class="section-feedback__avatar">
-                                        <img src="../images/avatar.png" alt="avatar">
+                                        <img src="./images/avatar.png" alt="avatar">
                                     </div>
                                     <div class="section-feedback-info">
                                         <div class="section-feedback-info__inner">
                                             <ul class="rating">
-                                                <li><img src="../images/star.png" alt="star"></li>
-                                                <li><img src="../images/star.png" alt="star"></li>
-                                                <li><img src="../images/star.png" alt="star"></li>
-                                                <li><img src="../images/star.png" alt="star"></li>
-                                                <li><img src="../images/star.png" alt="star"></li>
+                                                <li><img src="./images/star.png" alt="star"></li>
+                                                <li><img src="./images/star.png" alt="star"></li>
+                                                <li><img src="./images/star.png" alt="star"></li>
+                                                <li><img src="./images/star.png" alt="star"></li>
+                                                <li><img src="./images/star.png" alt="star"></li>
                                             </ul>
                                             <p>
                                                 Ad****a
@@ -154,7 +206,12 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="section-features__image">
-                                    <img src="../images/smiling-cat.png" alt="smiling cat">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="./images/smiling-cat.png">
+                                        <source media="(min-width: 768px) and (max-width:1439px)" srcset="./images/smiling-cat-tab.png">
+                                        <source media="(min-width: 768px)" srcset="./images/smiling-cat-desktop.png">
+                                        <img src="../images/smiling-cat.png" alt="smiling cat">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -166,15 +223,15 @@
             <div class="container">
                 <h1>Stay with us</h1>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xxl-4">
                         <p>
                             Mahjong Journey is constantly evolving. Become part of our community and follow us on:
                         </p>
                         <ul class="footer-links">
-                            <li><a href="#"><img src="../images/icon-fb.svg" alt="Facebook Link"></a></li>
-                            <li><a href="#"><img src="../images/icon-tw.svg" alt="Twitter Link"></a></li>
-                            <li><a href="#"><img src="../images/icon-yt.svg" alt="Youtube Link"></a></li>
-                            <li><a href="#"><img src="../images/icon-ig.svg" alt="Instagram Link"></a></li>
+                            <li><a href="#"><img src="./images/icon-fb.svg" alt="Facebook Link"></a></li>
+                            <li><a href="#"><img src="./images/icon-tw.svg" alt="Twitter Link"></a></li>
+                            <li><a href="#"><img src="./images/icon-yt.svg" alt="Youtube Link"></a></li>
+                            <li><a href="#"><img src="./images/icon-ig.svg" alt="Instagram Link"></a></li>
                         </ul>
                     </div>
                 </div>

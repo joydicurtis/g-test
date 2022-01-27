@@ -7,13 +7,7 @@
       @media (min-width: 768px) { @content; }
   }
   @else if $point == large {
-    @media (min-width: 1024px) { @content; }
-  }
-  @else if $point == x-large {
-      @media (min-width: 1366px) { @content; }
-  }
-  @else if $point == xlarge {
-    @media (min-width: 1536px) { @content; }
+    @media (min-width: 1366px) { @content; }
   }
 }
 

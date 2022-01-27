@@ -1,55 +1,61 @@
 .section-gif {
     position: relative;
-    background: url('../images/fuji-bg.png');
+    background: url('../images/fuji-bg.jpg');
     background-size: cover;
-    background-position: center;
-    padding: 75px 0;
+    background-position: 60% 0;
     border-radius: 40px 40px 0 0;
     z-index: 4;
     text-align: center;
     overflow-x: hidden;
+    padding: 75px 0 100px;
+    @include breakpoint(medium) {
+        padding: 40px 0 90px;
+        background-position: 50% 0;
+    }
+    @include breakpoint(medium) {
+        padding: 80px 0 90px;
+        background-position: 50% 0;
+    }
+    @include breakpoint(large) {
+        padding: 80px 0 120px;
+    }
     .section-gif__cloud-left {
         position: absolute;
-        top: 18px;
+        top: -55px;
         z-index: 5;
-        width: 122px;
         @include breakpoint(medium) {
-            width: 200px;
-            left: -6px;
-            top: 35px;
+            left: -15px;
+            top: 30px;
         }
-        @include breakpoint(medium) {
-            left: -80px;
+        @include breakpoint(large) {
+            left: -10px;
             top: 50px;
         }
     }
     .section-gif__cloud-right {
         position: absolute;
-        top: 10px;
-        right: 0;
+        top: -65px;
+        right: -15px;
         @include breakpoint(medium) {
-            top: 380px;
-            right: -115px;
+            top: 300px;
+            right: -15px;
         }
         @include breakpoint(large) {
             top: 55px;
-            right: -90px;
+            right: 60px;
         }
     }
     .section-gif__image {
+        position: relative;
         width: 100%;
-        max-width: 480px;
-        margin: 0 auto;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.639);
+        margin: 0 auto 10px;
         border-radius: 35px;
-        margin-bottom: 40px;
     }
     .section-gif__icon {
         position: relative;
         margin-bottom: 16px;
         z-index: 1;
         img {
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.64);
             border-radius: 12px;
         }
     }

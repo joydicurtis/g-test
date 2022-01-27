@@ -1,51 +1,53 @@
 .header {
-    position: relative;
-    background: url("../images/teaser-bg.png") no-repeat;
+    background: url("../images/teaser-bg.jpg") no-repeat;
     background-size: cover;
+    background-position: center 0;
     text-align: center;
     font-size: $fontSize-small;
     font-weight: $fontWeight-semibold;
     color: $white;
     overflow: hidden;
-    .header_logo {
-        width: 170px;
+    .header-container {
+        position: relative;
+        width: 100%;
+        max-width: 1320px;
         margin: 0 auto;
-        padding: 20px 0;
-        margin-bottom: 170px;
+        padding: 20px 0 60px;
         @include breakpoint(medium) {
-            width: 268px;
-            padding: 40px 0;
-            margin-bottom: 113px;
+            padding: 40px 0 80px;
         }
         @include breakpoint(large) {
-            width: 410px;
-            padding: 62px 0;
-            margin-bottom: 100px;
+            padding: 62px 0 102px;
+        }
+    }
+    .header_logo {
+        margin: 0 auto 192px;
+        @include breakpoint(medium) {
+            margin: 0 auto 113px;
+        }
+        @include breakpoint(large) {
+            margin: 0 auto 100px;
+        }
+        a {
+            display: block;
         }
     }
     .header_text {
         text-shadow: 0px 2px 2px #000000;
         font-size: $fontSize-large;
-        line-height: 40px;
+        line-height: 1.3;
         @include breakpoint(medium) {
             font-size: 28px;
         }
         @include breakpoint(large) {
             font-size: 40px;
-            line-height: 44px;
         }
     }
     .header-wrapper {
         position: relative;
         z-index: 3;
-        margin-bottom: 60px;
-        @include breakpoint(medium) {
-            margin-bottom: 80px;
-        }
-        @include breakpoint(large) {
-            margin-bottom: 100px;
-        }
-        .btn-primary {
+        margin-bottom: 0px;
+        .cta-button {
             margin-bottom: 16px;
             @include breakpoint(medium) {
                 margin-bottom: 36px;
@@ -56,31 +58,28 @@
         }
     }
     .header_hero {
-        width: 250px;
         position: absolute;
-        bottom: 0;
-        left: -50px;
+        bottom: -32px;
+        left: -10px;
         z-index: 2;
         @include breakpoint(medium) {
             left: 0;
-            width: 260px;
+            bottom: 30px;
         }
-        @include breakpoint(large) {
-            width: 362px;
+        @include breakpoint(medium) {
+            bottom: -20px;
         }
     }
     .header_chips {
-        width: 235px;
         position: absolute;
-        bottom: 85px;
+        bottom: 95px;
         z-index: 1;
-        right: -20px;
+        right: 0;
         @include breakpoint(medium) {
             right: 6px;
-            width: 303px;
         }
         @include breakpoint(large) {
-            width: 394px;
+            bottom: 130px;
         }
     }
 }

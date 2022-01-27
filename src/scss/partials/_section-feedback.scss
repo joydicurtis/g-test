@@ -1,6 +1,9 @@
 .section-feedback {
-    padding: 60px 0;
+    padding: 60px 0 85px;
     z-index: 5;
+    @include breakpoint(large) {
+        padding: 80px 0 110px;
+    }
     p {
         font-size: 20px;
         line-height: 28px;
@@ -25,10 +28,11 @@
         position: absolute;
         top: -46px;
         left: 16px;
-        width: 74px;
         @include breakpoint(medium) {
-            width: 100px;
-            top: -55px;
+            top: -70px;
+        }
+        @include breakpoint(large) {
+            top: -100px;
         }
     }
     .section-feedback__avatar {

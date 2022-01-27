@@ -2,7 +2,6 @@
     border-radius: 40px 40px 0 0;
     color: $text-color;
     margin-top: -40px;
-    padding: 28px;
     &.section_light {
         position: relative;
         background: $bg-color;
@@ -16,5 +15,6 @@
     }
     &.section_wooden {
         background: url(../images/wooden-bg.svg) $bg-color;
+        background-size: cover;
     }
 }
